@@ -1,7 +1,7 @@
 Hi, {{ user.first_name }}
 
-<p>Please follow the link to complete the registration</p>
+<p>Перейдіть за посиланням, щоб завершити реєстрацію</p>
 
 <a href="http://{{ domain }}{% url 'accounts:activate' uuid64=uid token=token %}">
-    Link to register
+    Посилання для реєстрації
 </a>

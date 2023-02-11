@@ -48,16 +48,18 @@
                     <nav class="nav nav-masthead justify-content-center float-md-end">
 
                         <a class="nav-link active" aria-current="page"
-                            href="{% url "index" %}">Home</a>
-                        <a class="nav-link"
-                            href="#">All
-                            students</a>
-                        <a class="nav-link"
-                            href="#">Create
-                            student</a>
-                        <a class="nav-link"
-                            href="#">Search
-                            history</a>
+                            href='{% url "index" %}'>
+                            Головна
+                        </a>
+                        <a class="nav-link" href="#">
+                            Всі учні
+                        </a>
+                        <a class="nav-link" href="#">
+                            Створити студента
+                        </a>
+                        <a class="nav-link" href="#">
+                            Історія пошуку
+                        </a>
                         {% if user.is_authenticated %}
                             <div class="nav-link dropdown text-end">
                                 <a href="#"
@@ -76,8 +78,11 @@
                                 </a>
                                 <ul class="dropdown-menu text-small"
                                     aria-labelledby="dropdownUser1" style="">
-                                    <li><a class="dropdown-item disabled">Hello,
-                                        {{ user.email|title }}</a></li>
+                                    <li>
+                                        <a class="dropdown-item disabled">
+                                            Привіт, {{ user.email|title }}
+                                        </a>
+                                    </li>
                                     {% if user.is_staff %}
                                         <li>
                                             <a class="dropdown-item" href='{% url "admin:index" %}'>
@@ -85,15 +90,23 @@
                                             </a>
                                         </li>
                                     {% endif %}
-                                    <li><a class="dropdown-item" href="#">Settings</a>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Налаштування
+                                        </a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Profile</a>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Профіль
+                                        </a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item"
-                                        href="{% url 'accounts:user_logout' %}">Logout</a>
+                                    <li>
+                                        <a class="dropdown-item" href="{% url 'accounts:user_logout' %}">
+                                            Вийти
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -110,21 +123,28 @@
                                 <ul class="dropdown-menu text-small"
                                     aria-labelledby="dropdownUser1" style=""
                                     title="User">
-                                    <li><a class="dropdown-item"
-                                        href="{% url 'accounts:user_registration' %}">Registration</a>
+                                    <li>
+                                        <a class="dropdown-item" href="{% url 'accounts:user_registration' %}">
+                                            Реєстрація
+                                        </a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Reset
-                                        password</a>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Скинути пароль
+                                        </a>
                                     </li>
-                                    <li><a class="dropdown-item"
-                                        href="{% url 'accounts:user_login' %}">Login</a>
+                                    <li>
+                                        <a class="dropdown-item" href="{% url 'accounts:user_login' %}">
+                                            Вхід
+                                        </a>
                                     </li>
-                                    <li><a class="dropdown-item"
-                                        href="#">Login
-                                        via gmail</a>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Вхід через gmail
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -135,23 +155,22 @@
 
             <main class="px-3">
                 {% block content %}
-                    <h1>Cover your page.</h1>
+                    <h1>Прикрийте свою сторінку.</h1>
                     <p class="lead">
-                        Cover is a one-page template for building simple
-                        and
-                        beautiful home pages. Download, edit the text, and add your own
-                        fullscreen background photo to make it your own.</p>
+                        Обкладинка — це односторінковий шаблон для створення простих і красивих домашніх сторінок. Завантажте, відредагуйте текст і додайте власну повноекранну фонову фотографію, щоб зробити її власною.
+                    </p>
                     <p class="lead">
-                        <a href="#"
-                            class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn
-                            more</a>
+                        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">
+                            Вивчайте більше
+                        </a>
                     </p>
                 {% endblock %}
             </main>
 
             <footer class="mt-auto text-white-50">
-                <p>Cover template for <a href="https://getbootstrap.com/"
-                    class="text-white">Bootstrap</a>, by
+                <p>Шаблон обкладинки для
+                    <a href="https://getbootstrap.com/"
+                        class="text-white">Bootstrap</a>, для
                     <a href="https://twitter.com/mdo" class="text-white">
                         @mdo
                     </a>

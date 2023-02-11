@@ -16,7 +16,7 @@
 
 5. Реєстрація через google workspace або іншу соціальну мережу.
 
-#### [GitHub](https://github.com/mikolaz27/itvdn_auth_webinar)
+#### [GitHub](https://github.com/mikolaz27/itvdn_auth_webinar) | [django_auth_example_with_email_confirmation](https://github.com/mikolaz27/itvdn_auth_webinar/tree/main/django_auth_example_with_email_confirmation)
 
 ---
 
