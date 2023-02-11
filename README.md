@@ -1,4 +1,5 @@
-## [Авторизація і аутентифікація у веб-застосунках з прикладами на Python + Django](https://www.youtube.com/watch?v=5QYdpHN8RZo&t=6069s)
+## ✅ [Авторизація і аутентифікація у веб-застосунках з прикладами на 
+Python + Django](https://www.youtube.com/watch?v=5QYdpHN8RZo&t=6069s)
 
 Вебінар має на меті розкрити тему авторизації, пояснити важливі складові цього функціоналу і те, як можна уникнути найпоширеніших помилок при створенні веб-ресурсу з використанням авторизації.
 
@@ -19,8 +20,6 @@
 #### [GitHub](https://github.com/mikolaz27/itvdn_auth_webinar) | [django_auth_example_with_email_confirmation](https://github.com/mikolaz27/itvdn_auth_webinar/tree/main/django_auth_example_with_email_confirmation)
 
 ---
-
-✅ 
 
 #### [Generate random secret key](https://djecrety.ir/)
 
