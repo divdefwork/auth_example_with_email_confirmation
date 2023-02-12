@@ -129,11 +129,10 @@
     # SageMath parsed files
     *.sage.py
 
-    # Environments
-    .env
-    !/.env
+# Environments
+.env
     .venv
-    env/
+env/
     venv/
     ENV/
     env.bak/
@@ -415,5 +414,5 @@
     # Ignore all local history of files
     .history
     .ionide
-
-    !/db.sqlite3
+!/.env
+!/db.sqlite3
