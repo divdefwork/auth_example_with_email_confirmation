@@ -131,7 +131,6 @@
 
 # Environments
 .env
-!/.env
     .venv
 env/
     venv/
@@ -415,5 +414,5 @@ env/
     # Ignore all local history of files
     .history
     .ionide
-!/.env
-!/db.sqlite3
+/.env
+/db.sqlite3
