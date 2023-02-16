@@ -5,7 +5,8 @@ from django.forms import EmailField
 
 class UserRegistrationForm(UserCreationForm):
     email = EmailField(
-        max_length=200, help_text='Please use your working email'
+        max_length=200,
+        help_text='Будь ласка, використовуйте робочу електронну адресу'
     )
 
     class Meta:
