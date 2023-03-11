@@ -15,6 +15,9 @@ from accounts.utils.token_generators import TokenGenerator
 
 
 class UserLoginView(LoginView):
+    """ Клас UserLoginView є успадкованим від LoginView
+    і реалізує функціонал автентифікації користувача. """
+
     def get_default_redirect_url(self):
         return reverse("index")
 
@@ -37,6 +40,7 @@ class UserRegistrationView(CreateView):
             request=self.request,
             user_instance=self.object
         )
+
         return super().form_valid(form)
 
 
