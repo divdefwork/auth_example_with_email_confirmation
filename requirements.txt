@@ -1,7 +1,7 @@
 asgiref==3.8.1
 astroid==3.3.1
 dill==0.3.8
-Django==5.1.13
+Django==5.1.14
 isort==5.13.2
 lazy-object-proxy==1.10.0
 mccabe==0.7.0
